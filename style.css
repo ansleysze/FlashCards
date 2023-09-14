@@ -1,0 +1,127 @@
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+/* reset page*/
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+body{
+	font-family: 'Work Sans', sans-serif;
+	font-size: medium;
+  background-color:paleturquoise;
+}
+
+button{
+  padding: 8px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid lightsalmon;
+  border-radius: 5px;
+  background: whitesmoke;
+}
+
+button:hover{
+  background-color: rgb(139, 235, 246);
+}
+
+.container{
+  width: 1280px;
+  margin: auto;
+}
+
+
+#header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  padding: 0 20px;
+  background: #ebafdc;
+}
+
+#header button{
+  font-family: inherit;
+  border: 1px solid red;
+}
+
+#create_card{
+  width: 370px;
+  margin:auto;
+  padding: 20px;
+  margin-top: 10px;
+  background: whitesmoke;
+ 
+}
+
+#create_card textarea{
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: inherit;
+  border: 1px solid lightblue;
+  text-align: justify;
+}
+
+#create_card button{
+  width: fit-content;
+}
+
+#flashcards{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+
+.flashcard{
+  width: 370px;
+  height: 200px;
+  word-wrap: break-word;
+  margin: 10px; 
+  background:#feffdc;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+  position: relative;
+  
+}
+
+.flashcard h2{font-size: 1rem;}
+
+.fa-close{
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  color: #130202;
+  transition: 0.5s ease-out;
+}
+
+.fa-close:hover{color: red;}
+
+
+@media(max-width:768px){
+  .flashcard{margin: auto;}
+
+  .flashcard{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width:480px){
+  #header{
+    padding: 20px;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media(max-width:1280px){
+  .container{width: 100%;}
+}
