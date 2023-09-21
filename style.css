@@ -88,10 +88,14 @@ button:hover{
   cursor: pointer;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
   position: relative;
+  overflow: hidden; /* Hide overflowing content */
+  word-wrap: break-word; /* Wrap long words onto the next line */
+  overflow-y: scroll; /* Add vertical scrollbar if content overflows */
   
 }
 
-.flashcard h2{font-size: 1rem;}
+.flashcard h2{font-size: 1rem;
+  padding: 3px;}
 
 .fa-close{
   top: 10px;
